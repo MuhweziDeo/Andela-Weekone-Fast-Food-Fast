@@ -240,3 +240,49 @@ background: greenyellow;
 border: 2px solid grey;
 padding: 8px;
 }
+
+
+/* order-template */
+.order{
+    display: grid;
+    width: 100%;
+   
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 5px;
+    overflow-x: hidden;
+    
+}
+.order-form{
+width: 100%;
+
+padding-right: 10px;
+
+}
+
+.orderform{
+    width: 200%;
+    /* float: right; */
+    
+}
+
+.order .orderform .btn-primary{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} 
+
+.order-menu{
+    width: 100%;
+    float:right;
+}
+
+.order .order-menu table{
+border:2px solid black;
+ width: 100%;
+text-align: center;
+border-collapse: collapse;
+}
