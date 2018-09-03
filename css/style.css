@@ -203,3 +203,40 @@ border: 1px solid #ccc;
 border-radius: 4px;
 box-sizing: border-box;
 }
+
+/*userprofile*/
+.user-profile{
+/* display: block; */
+/* margin: 20px auto; */
+width: 100%;
+}
+.user-profile .user-profile__info{
+display: grid;
+grid-template-columns: 2fr 5fr;
+font-size: 20px;
+grid-column-gap: 30px;
+}
+.user-profile img{
+width: 20%;
+}
+.user-profile .user-profile__info .user-profile--avatar input{
+width:90%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+.user-orders table{
+width: 100%;
+text-align: center;
+border-collapse: collapse;
+}
+.user-orders table th{
+background: greenyellow;
+}
+.user-orders table th,.user-orders table td{
+border: 2px solid grey;
+padding: 8px;
+}
