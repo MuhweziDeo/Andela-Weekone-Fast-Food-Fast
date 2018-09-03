@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+   /* background: rgba(0, 110, 255, 0.808); */
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.btn-primary{
+    display: inline-block;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    margin:4px 3px;
+    padding: 14px;
+    border-radius: 12px;
+}
+.btn-danger{
+    display: inline-block;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    margin:4px 3px;
+    padding: 14px;
+    border-radius: 12px;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+
+.navbar .logo{
+    border: none ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.808), blueviolet);
+    grid-column-gap: 10px;
+    color:black;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.navbar-item {
+    /* border: 2px solid black; */
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar-item:hover{
+    background-color:grey;
+}
