@@ -150,3 +150,66 @@ table th, table td{
     font-weight: bold;
 }
 
+
+/* forms */
+input[type=text], input[type=password]{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type=submit]{
+    background: green;
+    color: white;
+}
+label{
+    font-size: 20px;
+
+}
+/* signup form */
+.signup{
+ margin: 20px auto;
+ width:70%;
+ padding: 10px 20px;
+ font-size: 20px;
+ text-align: center;
+ /* border: 2px solid black; */
+ /* height: 60vh; */
+ 
+   
+}
+.signup label{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
+.signup .signupform h1{
+    font-style: italic;
+    margin-bottom: 30px;
+    
+}
+
+.signup .signupform .btn-primary{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+} 
+
+.signup .signupform a{
+    color: black;
+    text-decoration: underline;
+    color: blue;
+    
+}
+
+
