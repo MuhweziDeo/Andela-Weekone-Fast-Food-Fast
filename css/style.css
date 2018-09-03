@@ -203,7 +203,6 @@ border: 1px solid #ccc;
 border-radius: 4px;
 box-sizing: border-box;
 }
-
 /*userprofile*/
 .user-profile{
 /* display: block; */
@@ -240,49 +239,67 @@ background: greenyellow;
 border: 2px solid grey;
 padding: 8px;
 }
-
-
 /* order-template */
 .order{
-    display: grid;
-    width: 100%;
-   
-    grid-template-columns: 2fr 2fr;
-    grid-column-gap: 5px;
-    overflow-x: hidden;
-    
+display: grid;
+width: 100%;
+grid-template-columns: 2fr 2fr;
+grid-column-gap: 5px;
+overflow-x: hidden;
 }
 .order-form{
 width: 100%;
-
 padding-right: 10px;
-
 }
-
 .orderform{
-    width: 200%;
-    /* float: right; */
-    
+width: 200%;
+/* float: right; */
 }
-
 .order .orderform .btn-primary{
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-} 
-
-.order-menu{
-    width: 100%;
-    float:right;
+width: 30%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
 }
-
+.order-menu{
+width: 100%;
+float:right;
+}
 .order .order-menu table{
 border:2px solid black;
- width: 100%;
+width: 100%;
 text-align: center;
 border-collapse: collapse;
+}
+/* admin dashboard */
+.accordion{
+width: 100%;
+padding: 0;
+margin: 0;
+list-style-type: none;
+
+}
+.accordion-header{
+display: block;
+padding: 15px 20px;
+background: rgba(43, 46, 226, 0.808);
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+.accordion p{
+margin: 0 0 20px 0;
+}
+.accordion-content{
+padding: 0;
+height: 0;
+overflow: hidden;
+}
+.accordion-content:target{
+height: auto;
+padding: 10px;
 }
