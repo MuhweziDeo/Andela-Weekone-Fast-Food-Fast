@@ -302,6 +302,16 @@ overflow: hidden;
 height: auto;
 padding: 10px;
 }
+#food-items-table{
+    width: 100%;
+ 
+}
+
+
+
+#food-items-table tr td button{
+    width: 50%;
+}
 /*responsive design*/
 @media screen and (max-width: 480px) {
 .navbar{
@@ -355,6 +365,10 @@ grid-template-columns: 1fr;
 }
 .orderform{
 width: 100%;;
+}
+
+#food-items-table tr td button{
+    width: 100%;
 }
 
 }
