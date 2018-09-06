@@ -311,7 +311,7 @@ padding: 10px;
     width: 50%;
 }
 
-.modal, .modal-update{
+.modal, .modalupdate{
     display: none;
     position: fixed;
     width: 100%;
@@ -336,12 +336,18 @@ padding: 10px;
     
 }
 
+
+
+
 .modal .modal-content .btn-primary{
     width: 50%;
 }
 
 .modal .modal-content input{
     width: 100%;;
+}
+#editmodal .modal-content{
+    background: blueviolet;
 }
 /*responsive design*/
 @media screen and (max-width: 480px) {
