@@ -407,6 +407,10 @@ width: 100%;;
 #food-items-table tr td button{
     width: 100%;
 }
+.modal, .modalupdate{
+    width: 100%;
+    padding: 10px;
+}
 
 }
 @media screen and (min-width: 768px){
