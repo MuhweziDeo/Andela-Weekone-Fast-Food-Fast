@@ -30,12 +30,19 @@ https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/
 ## App Urls
 1. [Home Page](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/)
 2. [SignUp Page](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/signup.html)
+
 3. [Login Page](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/login.html)
+
 4. [User_Dashboard/Profile Page](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/user_profile_page.html)
+
 5. [Make Order Page For User](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/make_order.html)
-6. [Admin Dashboard](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_dashboard.html#first
+
+6. [Admin Interface for managing New orders](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_dashboard.html#first
 )
-7. [Admin Dashboard For checking Completed Orders](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_panel_orders.html)
+7. [Admin interface For checking Completed Orders](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_panel_orders.html)
+
+8. [Admin Interface For managing]
+(https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_panel_items.html)
 
 # Developed With
 - HTML5 and CSS
