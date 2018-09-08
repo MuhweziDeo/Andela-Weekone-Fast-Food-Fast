@@ -17,6 +17,7 @@ api/lib/
 api/bin/
 api/include/
 api/man/
+api/tests/__pycache__/
 develop-eggs/
 dist/
 downloads/
