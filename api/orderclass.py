@@ -16,3 +16,8 @@ class Order(object):
 			if order['orderId']==orderId:
 				return order
 		return {"message":"Order with id {} wasnt found four or four".format(orderId)}, 404
+
+	def update_order(self,id,data):
+		order=self.get_one_order(id)
+		order.update(data)
+		return order
