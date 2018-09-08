@@ -13,6 +13,6 @@ class Order(object):
 		return self.orders
 	def get_one_order(self,orderId):
 		for order in self.orders:
-			if order['orderId']==id:
+			if order['orderId']==orderId:
 				return order
 		return {"message":"Order with id {} wasnt found four or four".format(orderId)}, 404
