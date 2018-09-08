@@ -12,10 +12,12 @@ orderobj=api.model('Order',{
 	'user':fields.String,
 	'location':fields.String,
 	'quantity':fields.Integer,
-	'status':fields.String
+	'status':fields.String(default="Incomplete")
 
 	})
-
+updateorder=api.model('Update Order Status',{
+	'status':fields.String
+	})
 @api.route('/orders')
 class Orders(Resource):
 
@@ -31,3 +33,7 @@ class Orders(Resource):
 class OneOrder(Resource):
 	def get(self,orderId):
 		return order.get_one_order(orderId)
+	@api.expect(updateorder)	
+	def put(self,orderId):
+		data=api.payload
+		return order.update_order(orderId,data)
