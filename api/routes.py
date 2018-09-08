@@ -21,3 +21,6 @@ class Orders(Resource):
 	def post(self):
 		data=api.payload
 		return order.create_order(data),201
+		
+	def get(self):
+		return order.get_all_orders()
