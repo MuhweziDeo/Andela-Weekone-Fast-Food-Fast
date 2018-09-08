@@ -9,3 +9,5 @@ class Order(object):
 		order['id']=self.idcounter = self.idcounter + 1
 		self.orders.append(order)
 		return order
+	def get_all_orders(self):
+		return self.orders
