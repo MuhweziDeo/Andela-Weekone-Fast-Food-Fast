@@ -7,11 +7,16 @@ __pycache__/
 .idea/*
 # C extensions
 *.so
+*.json
+
 
 # Distribution / packaging
 .Python
 build/
-/venv/
+api/lib/
+api/bin/
+api/include/
+api/man/
 develop-eggs/
 dist/
 downloads/
