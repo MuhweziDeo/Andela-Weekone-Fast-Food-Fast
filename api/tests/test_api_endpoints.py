@@ -7,11 +7,7 @@ class TestAPI(unittest.TestCase):
 	def setUp(self):
 		self.app=app
 		self.client=self.app.test_client()
-		self.fastfood={
-		  "id": 1,
-		  "name": "pizza",
-		  "price": 400
-		}
+		
 		self.order={
 		  
 		  "meal": "pizza",
