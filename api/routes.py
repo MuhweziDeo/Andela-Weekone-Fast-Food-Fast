@@ -11,7 +11,9 @@ orderobj=api.model('Order',{
 	'meal':fields.String,
 	'user':fields.String,
 	'location':fields.String,
-	'quantity':fields.Integer
+	'quantity':fields.Integer,
+	'status':fields.String
+
 	})
 
 @api.route('/orders')
