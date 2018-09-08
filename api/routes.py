@@ -21,6 +21,11 @@ class Orders(Resource):
 	def post(self):
 		data=api.payload
 		return order.create_order(data),201
-		
+
 	def get(self):
 		return order.get_all_orders()
+
+@api.route('/orders/<int:orderId>')
+class OneOrder(Resource):
+	def get(self,orderId):
+		return order.get_one_order(orderId)
