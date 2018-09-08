@@ -34,5 +34,10 @@ class TestAPI(unittest.TestCase):
 		res=self.client.post('fastfoods/api/v1/orders',data=json.dumps(self.order),content_type='application/json')
 		res_orders=self.client.get('fastfoods/api/v1/orders')
 		self.assertEqual(res_orders.status,'200 OK')
+	def test_update_order(self):
+		res=self.client.post('fastfoods/api/v1/orders',data=json.dumps(self.order),content_type='application/json')
+		res_update_order=self.client.put('fastfoods/api/v1/orders/1',data=json.dumps(self.updateorder),content_type='application/json')
+		self.assertIn('complete',str(res_update_order.data))
+
 
 
