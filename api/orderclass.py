@@ -6,13 +6,13 @@ class Order(object):
 
 	def create_order(self,data):
 		order=data
-		order['id']=self.idcounter = self.idcounter + 1
+		order['orderId']=self.idcounter = self.idcounter + 1
 		self.orders.append(order)
 		return order
 	def get_all_orders(self):
 		return self.orders
-	def get_one_order(self,id):
+	def get_one_order(self,orderId):
 		for order in self.orders:
-			if order['id']==id:
+			if order['orderId']==id:
 				return order
-		return {"message":"Order with id {} wasnt found four or four".format(id)}, 404
+		return {"message":"Order with id {} wasnt found four or four".format(orderId)}, 404
