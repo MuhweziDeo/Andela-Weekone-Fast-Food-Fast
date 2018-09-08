@@ -11,3 +11,8 @@ class Order(object):
 		return order
 	def get_all_orders(self):
 		return self.orders
+	def get_one_order(self,id):
+		for order in self.orders:
+			if order['id']==id:
+				return order
+		return {"message":"Order with id {} wasnt found four or four".format(id)}, 404
