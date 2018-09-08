@@ -24,4 +24,8 @@ class TestAPI(unittest.TestCase):
 		res=self.client.post('fastfoods/api/v1/orders',data=json.dumps(self.order),content_type='application/json')
 		self.assertIn('pizza',str(res.data))
 		self.assertEqual(res.status_code,201)
-	
+
+	def test_get_order(self):
+		res=self.client.post('fastfoods/api/v1/orders',data=json.dumps(self.order),content_type='application/json')
+		res_order=self.client.get('fastfoods/api/v1/orders/1')
+		self.assertIn('1',str(res_order.data))
