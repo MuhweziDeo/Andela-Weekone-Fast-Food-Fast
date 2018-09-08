@@ -8,3 +8,4 @@ omit =
       */.pytest_cache/*
       */venv 
       */simplejson/*
+      *Profile
