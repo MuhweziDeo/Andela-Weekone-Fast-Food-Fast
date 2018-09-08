@@ -4,8 +4,8 @@ class Order(object):
 		self.idcounter=0
 		self.orders=[]
 
-	def create_order(slef,data):
+	def create_order(self,data):
 		order=data
-		order['id']=self.idcounter=self.idcounter+1
+		order['id']=self.idcounter = self.idcounter + 1
 		self.orders.append(order)
 		return order
