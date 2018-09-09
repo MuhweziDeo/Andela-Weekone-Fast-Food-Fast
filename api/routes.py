@@ -16,8 +16,9 @@ orderobj=api.model('Order',{
 	'quantity':fields.Integer(description="quantity of meal required",required=True),
 	'Date': fields.DateTime(dt_format='rfc822'),
 	})
+
 updateorder=api.model('Update Order Status',{
-	'status':fields.String(description="Status of order")
+	'status':fields.String(description="Status of order", required=True)
 	})
 
 @api.route('/orders')
