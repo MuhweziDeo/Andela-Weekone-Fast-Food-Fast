@@ -10,14 +10,14 @@ order=Order()
 
 orderobj=api.model('Order',{
 	
-	'meal':fields.String(description="meal to be ordered"),
-	'ordered by':fields.String(description="name of person ordering meal"),
-	'location':fields.String(description="location of person ordering meal"),
-	'quantity':fields.Integer(description="quantity of meal required"),
+	'meal':fields.String(description="meal to be ordered",required=True),
+	'ordered by':fields.String(description="name of person ordering meal",required=True),
+	'location':fields.String(description="location of person ordering meal",required=True),
+	'quantity':fields.Integer(description="quantity of meal required",required=True),
 	'Date': fields.DateTime(dt_format='rfc822'),
 	})
 updateorder=api.model('Update Order Status',{
-	'status':fields.String
+	'status':fields.String(description="Status of order")
 	})
 
 @api.route('/orders')
@@ -43,4 +43,5 @@ class OneOrder(Resource):
 	def put(self,orderId):
 		""" update order Status of an order"""
 		data=api.payload
-		return order.update_order(orderId,data)
+		order.update_order(orderId,data)
+		return {'message':'Order {} updated'.format(orderId)}
