@@ -13,7 +13,8 @@ orderobj=api.model('Order',{
 	'meal':fields.String(description="meal to be ordered"),
 	'ordered by':fields.String(description="name of person ordering meal"),
 	'location':fields.String(description="location of person ordering meal"),
-	'quantity':fields.Integer(description="quantity of meal required")
+	'quantity':fields.Integer(description="quantity of meal required"),
+	'Date': fields.DateTime(dt_format='rfc822'),
 	})
 updateorder=api.model('Update Order Status',{
 	'status':fields.String
