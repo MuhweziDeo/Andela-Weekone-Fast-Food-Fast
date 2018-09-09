@@ -7,6 +7,7 @@ class Order(object):
 	def create_order(self,data):
 		order=data
 		order['orderId']=self.idcounter = self.idcounter + 1
+		order['status']='pending'
 		self.orders.append(order)
 		return order
 	def get_all_orders(self):
