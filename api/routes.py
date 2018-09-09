@@ -11,7 +11,7 @@ order=Order()
 orderobj=api.model('Order',{
 	
 	'meal':fields.String(description="meal to be ordered"),
-	'user':fields.String(description="name of person ordering meal"),
+	'ordered by':fields.String(description="name of person ordering meal"),
 	'location':fields.String(description="location of person ordering meal"),
 	'quantity':fields.Integer(description="quantity of meal required")
 	})
