@@ -13,9 +13,7 @@ orderobj=api.model('Order',{
 	'meal':fields.String(description="meal to be ordered"),
 	'user':fields.String(description="name of person ordering meal"),
 	'location':fields.String(description="location of person ordering meal"),
-	'quantity':fields.Integer(description="quantity of meal required"),
-	'status':fields.String(default="Incomplete")
-
+	'quantity':fields.Integer(description="quantity of meal required")
 	})
 updateorder=api.model('Update Order Status',{
 	'status':fields.String
