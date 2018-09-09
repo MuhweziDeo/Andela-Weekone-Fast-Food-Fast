@@ -2,7 +2,7 @@ from flask_restplus import Api,Resource,fields
 from .app import app
 from .orderclass import Order
 
-api=Api(app, prefix="/fastfoods/api/v1")
+api=Api(app, prefix="/fastfoods/api/v1",version='1.0', title='Fast-Foods-API', description="An API for ordering Fast Foods")
 
 order=Order()
 
