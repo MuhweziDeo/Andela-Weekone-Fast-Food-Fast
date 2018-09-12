@@ -44,7 +44,7 @@ https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/
 8. [Admin interface For checking Completed Orders](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_panel_items.html)
 
 # Developed With
-- HTML5 and CSS
+- HTML5 and CSS and Javascript
 
 # Developer
 - Muhwezi Deo
