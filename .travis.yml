@@ -4,8 +4,9 @@ python:
 install:
     - pip install -r requirements.txt
 script:
-   - cd api/tests/
-   - pytest
+   - cd api/tests/cd 
+   - py.test --cov
+
 
 after_success:
     - coveralls
