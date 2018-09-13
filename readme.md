@@ -13,6 +13,14 @@ https://fast-foods-api.herokuapp.com/
 - To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
 
 ## App Features
+| EndPoint  | Get all the orders. |
+| ------------- | ------------- |
+|GET /orders   | Get all the orders |
+|GET /orders/<orderId>| Fetch a specific order  |
+|POST /orders|Place a new order.  |
+|PUT /orders/<orderId>|Update the status of an order. |
+
+
 
 ## Requirements
 - In the directory with cloned repository there is a requirements.txt with all packages needed to run and test the app locally
