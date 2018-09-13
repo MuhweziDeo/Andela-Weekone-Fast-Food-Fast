@@ -6,5 +6,24 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/85578458cdbe4b22ab63/maintainability)](https://codeclimate.com/github/MuhweziDeo/Andela-Weekone-Fast-Food-Fast/maintainability)
 
-# App is Hosted ON
+# Api is Hosted ON
 https://fast-foods-api.herokuapp.com/
+
+## Getting Started
+- To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
+
+## App Features
+
+## Requirements
+- In the directory with cloned repository there is a requirements.txt with all packages needed to run and test the app locally
+
+## Installation 
+- Run pip3 install -r requirements.txt(python3) to install recommended packages
+- If you are using python 2 run pip install -r requirements.txt 
+- After packages are installed run python/python3 run.py to run server for the application
+- In browser navigate to https://localhost:5000 to access app
+
+## Running Tests
+- To run Tests cd into Tests directory and run py.test --cov in terminal
+
+## 
