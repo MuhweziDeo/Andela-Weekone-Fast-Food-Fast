@@ -29,7 +29,7 @@ https://fast-foods-api.herokuapp.com/
 ## Tools Used
 - Flask[Python Web Framwork]
 - Flask-Restplus[Flask extension for Building RestApis]
--Pytest[Testing Framework]
+- Pytest[Testing Framework]
 
 
 ## Requirements
