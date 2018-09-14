@@ -1,4 +1,5 @@
 # Fast-Food-Fast API
+This is a Food Ordering App where users can order fast foods
 
 [![Build Status](https://travis-ci.org/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.svg?branch=160364084-api-endpoints)](https://travis-ci.org/MuhweziDeo/Andela-Weekone-Fast-Food-Fast)
 
@@ -6,11 +7,15 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/85578458cdbe4b22ab63/maintainability)](https://codeclimate.com/github/MuhweziDeo/Andela-Weekone-Fast-Food-Fast/maintainability)
 
-# Api is Hosted ON
-https://fast-foods-api.herokuapp.com/
+
 
 ## Getting Started
 - To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
+
+- To access via URL visit
+https://fast-foods-api.herokuapp.com/
+
+
 
 ## App Features
 | EndPoint  | Function |
@@ -20,6 +25,11 @@ https://fast-foods-api.herokuapp.com/
 |POST /orders|Place a new order.  |
 |PUT /orders/orderId|Update the status of an order. |
 
+
+## Tools Used
+- Flask[Python Web Framwork]
+- Flask-Restplus[Flask extension for Building RestApis]
+-Pytest[Testing Framework]
 
 
 ## Requirements
@@ -45,3 +55,6 @@ https://fast-foods-api.herokuapp.com/
 
 4. Test_update_order
 - Tests if an order status can be successfully updated
+
+## Authors
+- Muhwezi Deo
