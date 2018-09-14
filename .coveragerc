@@ -9,3 +9,5 @@ omit =
       */venv 
       */simplejson/*
       *Procfile
+      */usr/lib/python3/dist-packages/*
+      *__init__.py*
