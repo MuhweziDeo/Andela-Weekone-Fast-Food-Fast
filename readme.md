@@ -36,13 +36,16 @@ https://fast-foods-api.herokuapp.com/
 - In the directory with cloned repository there is a requirements.txt with all packages needed to run and test the app locally
 
 ## Installation 
-- Run pip3 install -r requirements.txt(python3) to install recommended packages for python3
-- If you are using python 2 run pip install -r requirements.txt 
+- cd in directory with cloned respository
+- Run 'pip3 install -r requirements.txt' to install recommended packages for python3 in terminal
+- If you are using python 2 'run pip install -r requirements.txt' in terminal
 - After packages are installed run python/python3 run.py to run server for the application
 - In browser navigate to https://localhost:5000 to access app
 
 ## Running Tests
-- Run py.test --cov in terminal
+- cd into directory with cloned repository
+- open a terminal window
+- Run 'py.test --cov' in terminal
 
 ## Break Down of Tests
 1. Test_create_order
