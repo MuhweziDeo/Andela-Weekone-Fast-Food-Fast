@@ -13,7 +13,7 @@ https://fast-foods-api.herokuapp.com/
 - To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
 
 ## App Features
-| EndPoint  | Get all the orders. |
+| EndPoint  | Function |
 | ------------- | ------------- |
 |GET /orders   | Get all the orders |
 |GET /orders/orderId| Fetch a specific order  |
@@ -26,12 +26,23 @@ https://fast-foods-api.herokuapp.com/
 - In the directory with cloned repository there is a requirements.txt with all packages needed to run and test the app locally
 
 ## Installation 
-- Run pip3 install -r requirements.txt(python3) to install recommended packages
+- Run pip3 install -r requirements.txt(python3) to install recommended packages for python3
 - If you are using python 2 run pip install -r requirements.txt 
 - After packages are installed run python/python3 run.py to run server for the application
 - In browser navigate to https://localhost:5000 to access app
 
 ## Running Tests
-- To run Tests cd into Tests directory and run py.test --cov in terminal
+- Run py.test --cov in terminal
 
-## 
+## Break Down of Tests
+- Test_create_order
+Tests if an order has beeen created successfully
+
+- Test_get_order
+Tests if order with a specific orderID can be returned
+
+- Test_get_orders
+Tests if all created orders created can be returned
+
+-Test_update_order
+Tests if an order status can be successfully updated
