@@ -35,14 +35,13 @@ https://fast-foods-api.herokuapp.com/
 - Run py.test --cov in terminal
 
 ## Break Down of Tests
-- [!Test_create_order]
-Tests if an order has beeen created successfully
+1. Test_create_order
+- Tests if an order has beeen created successfully
 
-- Test_get_order
-Tests if order with a specific orderID can be returned
+2. Test_get_order
+- Tests if order with a specific orderID can be returned
+3. Test_get_orders
+- Tests if all created orders created can be returned
 
-- Test_get_orders
-Tests if all created orders created can be returned
-
--Test_update_order
-Tests if an order status can be successfully updated
+4. Test_update_order
+- Tests if an order status can be successfully updated
