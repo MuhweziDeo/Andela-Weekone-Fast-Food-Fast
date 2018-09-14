@@ -12,7 +12,7 @@ This is a Food Ordering App where users can order fast foods
 ## Getting Started
 - To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
 
-- To access via URL visit
+- To access and use app on Postman, Use URL 
 https://fast-foods-api.herokuapp.com/
 
 
@@ -39,7 +39,9 @@ https://fast-foods-api.herokuapp.com/
 - cd in directory with cloned respository
 - Run 'pip3 install -r requirements.txt' to install recommended packages for python3 in terminal
 - If you are using python 2 'run pip install -r requirements.txt' in terminal
-- After packages are installed run python/python3 run.py to run server for the application
+- open terminal
+- run "git checkout 160364084-api-endpoints"
+- run "python/python3(depending on python version) run.py" to start server
 - In browser navigate to https://localhost:5000 to access app
 
 ## Running Tests
