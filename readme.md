@@ -62,5 +62,8 @@ https://fast-foods-api.herokuapp.com/
 4. Test_update_order
 - Tests if an order status can be successfully updated
 
+##Acknowledgments
+- https://flask-restplus.readthedocs.io/en/stable/ 
+
 ## Authors
 - Muhwezi Deo
