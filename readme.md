@@ -16,6 +16,7 @@ This is a Food Ordering App where users can order fast foods
 https://fast-foods-api.herokuapp.com/
 
 
+<<<<<<< HEAD
 
 ## App Features
 | EndPoint  | Function |
@@ -27,6 +28,8 @@ https://fast-foods-api.herokuapp.com/
 
 
 
+=======
+>>>>>>> 027e87d3a0391f07b14c5d4fd4e115be4b5de7a0
 ## Tools Used
 - Flask[Python Web Framwork]
 - Flask-Restplus[Flask extension for Building RestApis]
@@ -45,6 +48,17 @@ https://fast-foods-api.herokuapp.com/
 - run `python/python3(depending on python version) run.py` to start server
 - In browser navigate to https://localhost:5000 to access app
 
+## App Features
+| EndPoint  | Function |
+| ------------- | ------------- |
+|GET /orders   | Get all the orders |
+|GET /orders/orderId| Fetch a specific order  |
+|POST /orders|Place a new order.  |
+|PUT /orders/orderId|Update the status of an order. |
+
+## How to Use
+-
+
 ## Running Tests
 - cd into directory with cloned repository
 - open a terminal window
@@ -61,6 +75,9 @@ https://fast-foods-api.herokuapp.com/
 
 4. Test_update_order
 - Tests if an order status can be successfully updated
+
+##Acknowledgments
+- https://flask-restplus.readthedocs.io/en/stable/ 
 
 ## Authors
 - Muhwezi Deo
