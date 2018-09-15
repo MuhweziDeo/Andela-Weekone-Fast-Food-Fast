@@ -16,8 +16,6 @@ This is a Food Ordering App where users can order fast foods
 https://fast-foods-api.herokuapp.com/
 
 
-<<<<<<< HEAD
-
 ## App Features
 | EndPoint  | Function |
 | ------------- | ------------- |
@@ -27,9 +25,6 @@ https://fast-foods-api.herokuapp.com/
 |PUT /orders/orderId|Update the status of an order. |
 
 
-
-=======
->>>>>>> 027e87d3a0391f07b14c5d4fd4e115be4b5de7a0
 ## Tools Used
 - Flask[Python Web Framwork]
 - Flask-Restplus[Flask extension for Building RestApis]
