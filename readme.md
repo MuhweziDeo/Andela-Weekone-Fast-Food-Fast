@@ -10,7 +10,7 @@ This is a Food Ordering App where users can order fast foods
 
 
 ## Getting Started
-- To Run Locally git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git
+- To Run Locally `git clone https://github.com/MuhweziDeo/Andela-Weekone-Fast-Food-Fast.git`
 
 - To access and use app on Postman, Use URL 
 https://fast-foods-api.herokuapp.com/
@@ -26,6 +26,7 @@ https://fast-foods-api.herokuapp.com/
 |PUT /orders/orderId|Update the status of an order. |
 
 
+
 ## Tools Used
 - Flask[Python Web Framwork]
 - Flask-Restplus[Flask extension for Building RestApis]
@@ -37,17 +38,17 @@ https://fast-foods-api.herokuapp.com/
 
 ## Installation 
 - cd in directory with cloned respository
-- Run 'pip3 install -r requirements.txt' to install recommended packages for python3 in terminal
-- If you are using python 2 'run pip install -r requirements.txt' in terminal
+- Run `pip3 install -r requirements.txt` to install recommended packages for python3 in terminal
+- If you are using python 2 `run pip install -r requirements.txt` in terminal
 - open terminal
 - run "git checkout 160364084-api-endpoints"
-- run "python/python3(depending on python version) run.py" to start server
+- run `python/python3(depending on python version) run.py` to start server
 - In browser navigate to https://localhost:5000 to access app
 
 ## Running Tests
 - cd into directory with cloned repository
 - open a terminal window
-- Run 'py.test --cov' in terminal
+- Run `py.test --cov` in terminal
 
 ## Break Down of Tests
 1. Test_create_order
