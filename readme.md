@@ -57,7 +57,27 @@ https://fast-foods-api.herokuapp.com/
 |PUT /orders/orderId|Update the status of an order. |
 
 ## How to Use
--
+1. create a new order
+- Open postman and create a POST request on [https://fast-foods-api.herokuapp.com/fastfoods/api/v1/orders]
+- Data should be in format below
+	-`{
+  "meal": "string",
+  "ordered by": "string",
+  "location": "string",
+  "quantity": 0,
+  "Date": "2018-09-15T15:12:56.859Z"
+}`
+	-order status by default is "pending"
+2. Get all orders
+- Perform a GET request on [https://fast-foods-api.herokuapp.com/fastfoods/api/v1/orders]
+3. Get an order
+- Pass in orderId on https://fast-foods-api.herokuapp.com/fastfoods/api/v1/orders/1 and make a GET Request
+4. Update order Status
+- Pass in an orderid on https://fast-foods-api.herokuapp.com/fastfoods/api/v1/orders/1 and make a PUT request
+- In header pass payload in format below
+	-`{
+  "status": "string"
+	}`
 
 ## Running Tests
 - cd into directory with cloned repository
@@ -76,7 +96,7 @@ https://fast-foods-api.herokuapp.com/
 4. Test_update_order
 - Tests if an order status can be successfully updated
 
-##Acknowledgments
+## Acknowledgments
 - https://flask-restplus.readthedocs.io/en/stable/ 
 
 ## Authors
