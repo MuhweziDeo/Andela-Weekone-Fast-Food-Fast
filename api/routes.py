@@ -24,7 +24,7 @@ updateorder=api.model('Update Order Status',{
 @api.route('/orders')
 class Orders(Resource):
 
-	@api.expect(orderobj,validate=True)
+	@api.expect(orderobj)
 	def post(self):
 		"""Create an order """
 		data=api.payload
@@ -40,7 +40,7 @@ class OneOrder(Resource):
 		""" Get Details of an Order by orderId"""
 		return order.get_one_order(orderId)
 
-	@api.expect(updateorder,validate=True)	
+	@api.expect(updateorder)	
 	def put(self,orderId):
 		""" update order Status of an order"""
 		data=api.payload
