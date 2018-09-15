@@ -11,8 +11,10 @@ class Order(object):
 		order['status']='pending'
 		self.orders.append(order)
 		return order
+		
 	def get_all_orders(self):
 		return self.orders
+
 	def get_one_order(self,orderId):
 		for order in self.orders:
 			if order['orderId']==orderId:
