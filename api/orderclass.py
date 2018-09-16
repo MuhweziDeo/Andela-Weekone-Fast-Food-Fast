@@ -2,8 +2,29 @@
 class Order(object):
 	# init class
 	def __init__(self):
-		self.idcounter=0
-		self.orders=[]
+		self.idcounter=2
+		self.orders=[
+							
+			{
+			"meal": "pizza",
+			"ordered by": "dee",
+			"location": "Bunga",
+			"quantity": 4,
+			"Date": "2018-09-16T18:22:23.408Z",
+			"orderId": 1,
+			"status": "pending"
+			},
+
+			{
+			"meal": "Burger",
+			"ordered by": "Mendy",
+			"location": "Gayaza",
+			"quantity": 4,
+			"Date": "2018-09-16T18:22:23.408Z",
+			"orderId": 2,
+			"status": "Rejected"
+			}
+		]
 
 	def create_order(self,data):
 		order=data
