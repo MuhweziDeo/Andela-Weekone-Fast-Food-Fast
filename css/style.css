@@ -349,6 +349,20 @@ padding: 10px;
 #editmodal .modal-content{
     background: blueviolet;
 }
+
+select{
+    background: blue;
+    color: white;
+    border: 10px solid  blue;
+    font-size: 16px;
+
+}
+
+option{
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 /*responsive design*/
 @media screen and (max-width: 480px) {
 .navbar{
