@@ -384,11 +384,15 @@ background-size: cover;
 
 }
 .intro__text{
-top:10%;
+top:1%;
 right: 10%;
 }
 .intro .intro__text button{
-font-size: 10px;
+font-size: 8px;
+}
+.intro .intro__text table{
+    display: block;
+    margin-left: 10px;
 }
 .intro .intro__text .menu{
 font-size: 16px;
@@ -434,13 +438,20 @@ width: 100%;;
 
 }
 @media screen and (min-width: 768px){
+.home{
+        background: url(../img/pexels-photo-70497.jpeg);
+        background-position: cover;
+        background-repeat: repeat-x;
+        height: 95vh;
+ }
 .intro{
 /* -webkit-clip-path:none; */
 /* clip-path:none; */
 font-size: 16px;
-height: 80vh;
-background-size: cover;
+/* height: 95vh; */
+background-image: none;
 
 }
+
 
 }
