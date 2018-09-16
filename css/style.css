@@ -35,6 +35,12 @@ a{
 text-decoration: none;
 /* color: white; */
 }
+.home{
+background: url(../img/pexels-photo-70497.jpeg);
+background-position: left;
+background-repeat: repeat-x;
+height: 95vh;
+}
 /*navbar*/
 .navbar .logo{
 border: none ;
@@ -71,7 +77,7 @@ background-color:grey;
 .intro{
 /* display: block; */
 text-align: center;
-background: url(../img/pexels-photo-70497.jpeg);
+/* background: url(../img/pexels-photo-70497.jpeg); */
 background-position: left;
 background-repeat: repeat-x;
 height: 95vh;
