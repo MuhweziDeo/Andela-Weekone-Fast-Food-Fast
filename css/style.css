@@ -7,6 +7,7 @@ body{
 /* background: rgba(0, 110, 255, 0.808); */
 margin-left: 20px;
 margin-right: 20px;
+
 }
 /*buttons*/
 .btn-primary{
@@ -50,7 +51,8 @@ padding-bottom: 5px;
 .navbar{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.808), blueviolet);
+/* background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.808), blueviolet); */
+background-color: transparent;
 grid-column-gap: 10px;
 color:black;
 padding-top: 5px;
@@ -371,6 +373,11 @@ option{
 }
 /*responsive design*/
 @media screen and (max-width: 480px) {
+.home{
+    background-position: cover;
+    height: 100%;
+    width: 100%;
+}
 .navbar{
 grid-template-columns: 1fr;
 grid-row-gap: 10px;
