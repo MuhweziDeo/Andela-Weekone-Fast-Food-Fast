@@ -5,8 +5,8 @@ margin: 0;
 }
 body{
 /* background: rgba(0, 110, 255, 0.808); */
-margin-left: 20px;
-margin-right: 20px;
+/*margin-left: 20px;
+margin-right: 20px;*/
 
 }
 /*buttons*/
@@ -216,6 +216,10 @@ box-sizing: border-box;
 /* display: block; */
 /* margin: 20px auto; */
 width: 100%;
+color:  white;
+}
+.user-profile h1{
+color: black;
 }
 .user-profile .user-profile__info{
 display: grid;
