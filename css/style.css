@@ -258,13 +258,17 @@ width: 100%;
 grid-template-columns: 2fr 1fr;
 grid-column-gap: 5px;
 overflow-x: hidden;
+color: white;
+}
+.order h1{
+    color: green;
 }
 .order-form{
 width: 100%;
 padding-right: 10px;
 }
 .orderform{
-width: 200%;
+width: 150%;
 /* float: right; */
 }
 .order .orderform .btn-primary{
