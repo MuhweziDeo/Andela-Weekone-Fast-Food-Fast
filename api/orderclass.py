@@ -7,7 +7,7 @@ class Order(object):
 							
 			{
 			"meal": "pizza",
-			"ordered by": "dee",
+			"username": "dee",
 			"location": "Bunga",
 			"quantity": 4,
 			"Date": "2018-09-16T18:22:23.408Z",
@@ -17,7 +17,7 @@ class Order(object):
 
 			{
 			"meal": "Burger",
-			"ordered by": "Mendy",
+			"username": "Mendy",
 			"location": "Gayaza",
 			"quantity": 4,
 			"Date": "2018-09-16T18:22:23.408Z",
