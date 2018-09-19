@@ -92,7 +92,8 @@ https://fast-foods-api.herokuapp.com/
 - Tests if an order status can be successfully updated
 
 ## Acknowledgments
-- https://flask-restplus.readthedocs.io/en/stable/ 
+- https://flask-restplus.readthedocs.io/en/stable/ [`Built API following Example in documentation`]
+- https://github.com/skapeyi/flask_book_api/blob/3_add_book/app.p [`Used Info to Build a function to validate api payload`]
 
 ## Authors
 - Muhwezi Deo
