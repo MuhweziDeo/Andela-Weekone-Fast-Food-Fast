@@ -11,7 +11,7 @@ class TestAPI(unittest.TestCase):
 		self.order={
 		  
 		  "meal": "pizza",
-		  "user": "dee",
+		  "username": "dee",
 		  "location": "kla",
 		  'status':'incomplete',
 		  "quantity": 5
