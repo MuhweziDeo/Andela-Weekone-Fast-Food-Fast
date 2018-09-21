@@ -35,7 +35,7 @@ https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/
 
 4. [User_Dashboard/Profile Page](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/user_profile_page.html)
 
-5. [Make Order Page For User](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/make_order.html)
+5. [Make Order Page For User]
 
 6. [Admin Interface for managing New orders](https://muhwezideo.github.io/Andela-Weekone-Fast-Food-Fast/admin_dashboard.html#first
 )
