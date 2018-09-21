@@ -26,6 +26,23 @@
                 <a href="index.html">Logout</a>
             </div>
         </div>
+        <div id="order-modal" class="modal">
+            <div class="modal-content">
+                <h1>Make Order</h1>
+                <label for="">Meal-Name</label><br>
+                <input type="text"><br>
+                <label for="">Quantity</label><br>
+                <input type="text"><br>
+                <label for="">Location</label><br>
+                <input type="text"><br>
+                <input class="btn-primary" type="submit" value="Place order">
+                <button id="cancel-order" class="btn-danger">Cancel</button>    
+
+            </div>
+
+            
+
+        </div>
         <div class="user-profile">
             <div class="user-profile__info">
                 <div class="user-profile--avatar">
@@ -36,6 +53,7 @@
                         <p class="user-profile--datejoined">Member Since:Jan/08/2018</p>
                         <p class="user-profile--ordersmade">Orders Made:20</p>
                         <button id="place-order" class="btn-primary">Make Order</button>
+                        <button id="view-menu" class="btn-primary">View Menu</button>
                     </div>
                 </div>
                 <div class="user-orders">
