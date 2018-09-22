@@ -37,7 +37,7 @@ text-decoration: none;
 /* color: white; */
 }
 .home{
-background: url(../img/pexels-photo-70497.jpeg);
+background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.808), blueviolet),url(../img/pexels-photo-70497.jpeg);
 background-position: left;
 background-repeat: repeat-x;
 height: 95vh;
@@ -458,7 +458,8 @@ width: 100%;;
 }
 @media screen and (min-width: 768px){
 .home{
-        background: url(../img/pexels-photo-70497.jpeg);
+        /* background: url(../img/pexels-photo-70497.jpeg); */
+        background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.438), rgba(137, 43, 226, 0.116)),url(../img/pexels-photo-70497.jpeg);
         background-position: cover;
         background-repeat: repeat-x;
         height: 95vh;
