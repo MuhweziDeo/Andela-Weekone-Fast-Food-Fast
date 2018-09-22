@@ -11,6 +11,18 @@ closebtn.onclick = function () {
 function showmodal() {
     document.getElementById("editmodal").style.display = "block";
 }
+function closemodal() {
+    document.getElementById("editmodal").style.display = "none";
+}
+
+function addfastfood() {
+    document.getElementById("add-modal").style.display = "block";
+}
+function close_addmodal() {
+    document.getElementById("add-modal").style.display = "none";
+}
+
+
 
 function displaymenu() {
     document.getElementById("menu-modal").style.display = "block";
