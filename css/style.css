@@ -162,6 +162,8 @@ width:70%;
 padding: 10px 20px;
 font-size: 20px;
 text-align: center;
+color: #ffffff;
+font-weight: 100;
 /* border: 2px solid black; */
 /* height: 60vh; */
 }
@@ -185,9 +187,9 @@ color: white;
 text-decoration: none;
 }
 .signup .signupform a{
-color: black;
+
 text-decoration: underline;
-color: blue;
+color:yellow;
 }
 /* loginform */
 .login{
@@ -202,6 +204,10 @@ margin-bottom: 30px;
 }
 .login .loginform input{
 width: 30%;
+}
+.login .loginform a{
+    color: yellow;
+    font-weight: 700;
 }
 .login .loginform .btn-primary{
 width: 30%;
@@ -459,7 +465,7 @@ width: 100%;;
 @media screen and (min-width: 768px){
 .home{
         /* background: url(../img/pexels-photo-70497.jpeg); */
-        background:linear-gradient(to right bottom, rgba(0, 110, 255, 0.438), rgba(137, 43, 226, 0.116)),url(../img/pexels-photo-70497.jpeg);
+        background:linear-gradient(to right bottom, rgb(0, 110, 255), rgba(137, 43, 226, 0.473)),url(../img/pexels-photo-70497.jpeg);
         background-position: cover;
         background-size: 100%;
         background-repeat: no-repeat;
