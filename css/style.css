@@ -119,13 +119,26 @@ transform: scale(1.1);
 background:#ffffff;
 color: black;
 }
-
-
+.intro .intro__text .menu{
+font-size: 30px;
+text-align: center;
+margin-top: 10px;
+}
+.intro .intro__text .menu table{
+border:2px solid black;
+width: 100%;
+text-align: center;
+border-collapse: collapse;
+}
 table th, table td{
 border: 2px solid salmon;
 padding: 8px;
 }
-
+.intro .intro__text .menu table th{
+background: rgba(0, 128, 0, 0.473);
+color: black;
+font-weight: bold;
+}
 /* forms */
 input[type=text], input[type=password]{
 width: 50%;
