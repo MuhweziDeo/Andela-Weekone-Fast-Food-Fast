@@ -61,6 +61,14 @@ class TestAPI(unittest.TestCase):
 		res=self.client.post('fastfoods/api/v1/orders',data=json.dumps(self.invalid_order_length),content_type='application/json')
 		self.assertIn("Input payload validation failed",str(res.data))
 		self.assertIn("is too short",str(res.data))
+	def test_access_invalid_url(self):
+		res=self.client.get('fastfoods/api/v1/orders/kkjadja')
+		self.assertIn("Hey The URL you Tried to Acess Doesnt Exist on the server",str(res.data))
+		
+	def test_access_url(self):
+		res=self.client.get('fastfoods/api/v1/orders')
+		self.assertEqual(200,res.status_code)
+
 
 
 
