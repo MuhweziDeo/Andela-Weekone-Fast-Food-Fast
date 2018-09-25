@@ -57,10 +57,9 @@ https://fast-foods-api.herokuapp.com/
 - Data should be in format below
 	-`{
   "meal": "string",
-  "ordered by": "string",
+  "username": "string",
   "location": "string",
-  "quantity": 0,
-  "Date": "2018-09-15T15:12:56.859Z"
+  "quantity": 0
 }`
 	-order status by default is "pending"
 2. Get all orders
