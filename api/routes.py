@@ -55,8 +55,8 @@ def error(AttributeError):
 
 @app.errorhandler(404)
 def page_not_found(error):
-	return jsonify({'message':'hey 404'})
-	
+	return jsonify({'message':'The URL You Entered Dosent Exist on The Server'}), 404
+
 @api.errorhandler
 def error_handler(error):
     return {'message': str(error)}, getattr(error, 'code', 500)
