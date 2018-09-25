@@ -46,11 +46,16 @@ class OneOrder(Resource):
 		data=api.payload
 		order.update_order(orderId,data)
 		return {'message':'Order {} updated'.format(orderId)}
+
+@api.errorhandler(AttributeError)
+def error(AttributeError):
+	return {'error':"You Tried To Update An Order That doesnt Exist"
+	},400
 		
 
 @api.errorhandler
 def error_handler(error):
-    return {'message': str(error)}, getattr(error, 'code', 401)
+    return {'message': str(error)}, getattr(error, 'code', 500)
 
 
 
