@@ -55,7 +55,8 @@ def error(AttributeError):
 
 @app.errorhandler(404)
 def page_not_found(error):
-	return jsonify({'message':'The URL You Entered Dosent Exist on The Server'}), 404
+	return jsonify({'message':"Hey The URL you Tried to Acess Doesnt Exist on the server",
+		"Please Go to Home page":"https://fast-foods-api.herokuapp.com/fastfoods/api/v1/orders"}), 404
 
 @api.errorhandler
 def error_handler(error):
