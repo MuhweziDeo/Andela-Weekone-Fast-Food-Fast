@@ -48,3 +48,9 @@ class OneOrder(Resource):
 		return {'message':'Order {} updated'.format(orderId)}
 		
 
+@api.errorhandler
+def error_handler(error):
+    return {'message': str(error)}, getattr(error, 'code', 401)
+
+
+
