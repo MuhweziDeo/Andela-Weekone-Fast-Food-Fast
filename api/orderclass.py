@@ -1,4 +1,4 @@
-
+import datetime
 class Order(object):
 	# init class
 	def __init__(self):
@@ -9,6 +9,7 @@ class Order(object):
 		order=data
 		order['orderId']=self.idcounter = self.idcounter + 1
 		order['status']='pending'
+		order['Date']=str(datetime.utcnow())
 		self.orders.append(order)
 		return order
 		
