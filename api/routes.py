@@ -27,19 +27,8 @@ class Orders(Resource):
 	def post(self):
 		"""Create an order """
 		data=api.payload
-		if validate_order(data):
-			return order.create_order(data),201
-		else:
-			return {'Info Message':'Missing Some Parameters',
-			"Exepected input":{
-						  "meal": "string",
-						  "username": "string",
-						  "location": "string",
-						  "quantity": 0,
-						  "Date": "2018-09-19T15:32:14.610Z"
-						}
-			}
 		return order.create_order(data),201
+	
 
 	def get(self):
 		""" Get All Orders """
@@ -58,9 +47,4 @@ class OneOrder(Resource):
 		order.update_order(orderId,data)
 		return {'message':'Order {} updated'.format(orderId)}
 		
-def validate_order(data):
-	if "meal" in data and "location" in data and "username" in data and "quantity" in data:
-		return True
-	else:
-		return False
-	
+
