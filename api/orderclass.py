@@ -13,7 +13,19 @@ class Order(object):
 		return order
 		
 	def get_all_orders(self):
-		return self.orders
+		if len(self.orders)>1:
+			return self.orders
+		else:
+			return {'message':'No orders placed',
+			"Expected Order Format":{
+			"meal":"string",
+			"username":"string",
+			"location":"string",
+			"quantity":"integer"
+			}
+			}
+			
+			
 
 	def get_one_order(self,orderId):
 		for order in self.orders:
