@@ -10,20 +10,20 @@ order=Order()
 
 orderobj=api.model('Order',{
 	
-	'meal':fields.String(description="meal to be ordered",required=True),
-	'username':fields.String(description="name of person ordering meal",required=True),
-	'location':fields.String(description="location of person ordering meal",required=True),
-	'quantity':fields.Integer(description="quantity of meal required",required=True)
+	'meal':fields.String(description="meal to be ordered",required=True,min_length=4),
+	'username':fields.String(description="name of person ordering meal",required=True,min_length=4),
+	'location':fields.String(description="location of person ordering meal",required=True,min_length=4),
+	'quantity':fields.Integer(description="quantity of meal required",required=True,min_length=4)
 	})
 
 updateorder=api.model('Update Order Status',{
-	'status':fields.String(description="Status of order", required=True)
+	'status':fields.String(description="Status of order", required=True,min_length=4)
 	})
 
 @api.route('/orders')
 class Orders(Resource):
 
-	@api.expect(orderobj)
+	@api.expect(orderobj,validate=True)
 	def post(self):
 		"""Create an order """
 		data=api.payload
@@ -40,7 +40,7 @@ class OneOrder(Resource):
 		""" Get Details of an Order by orderId"""
 		return order.get_one_order(orderId)
 
-	@api.expect(updateorder)	
+	@api.expect(updateorder,validate=True)	
 	def put(self,orderId):
 		""" update order Status of an order"""
 		data=api.payload
