@@ -1,3 +1,4 @@
+from flask import jsonify
 from flask_restplus import Api,Resource,fields
 from .app import app
 from .orderclass import Order
@@ -51,8 +52,11 @@ class OneOrder(Resource):
 def error(AttributeError):
 	return {'error':"You Tried To Update An Order That doesnt Exist"
 	},400
-		
 
+@app.errorhandler(404)
+def page_not_found(error):
+	return jsonify({'message':'hey 404'})
+	
 @api.errorhandler
 def error_handler(error):
     return {'message': str(error)}, getattr(error, 'code', 500)
