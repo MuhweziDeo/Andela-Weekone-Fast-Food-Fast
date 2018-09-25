@@ -10,6 +10,9 @@ class Order(object):
 		order['orderId']=self.idcounter = self.idcounter + 1
 		order['status']='pending'
 		order['Date']=str(datetime.utcnow())
+		order['meal']=data['meal'].strip()
+		order['username']=data['username'].strip()
+		order['location']=data['location'].strip()
 		self.orders.append(order)
 		return order
 		
