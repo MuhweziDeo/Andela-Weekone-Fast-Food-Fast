@@ -36,6 +36,8 @@ https://fast-foods-api.herokuapp.com/
 
 ## Installation 
 - cd in directory with cloned respository
+- install a virtualenv 
+- Activate the virtualenv
 - Run `pip3 install -r requirements.txt` to install recommended packages for python3 in terminal
 - If you are using python 2 `run pip install -r requirements.txt` in terminal
 - open terminal
