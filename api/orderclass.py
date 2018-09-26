@@ -1,40 +1,35 @@
-
+from datetime import datetime
 class Order(object):
 	# init class
 	def __init__(self):
 		self.idcounter=2
-		self.orders=[
-							
-			{
-			"meal": "pizza",
-			"username": "dee",
-			"location": "Bunga",
-			"quantity": 4,
-			"Date": "2018-09-16T18:22:23.408Z",
-			"orderId": 1,
-			"status": "pending"
-			},
-
-			{
-			"meal": "Burger",
-			"username": "Mendy",
-			"location": "Gayaza",
-			"quantity": 4,
-			"Date": "2018-09-16T18:22:23.408Z",
-			"orderId": 2,
-			"status": "Rejected"
-			}
-		]
+		self.orders=[]
 
 	def create_order(self,data):
 		order=data
 		order['orderId']=self.idcounter = self.idcounter + 1
 		order['status']='pending'
+		order['Date']=str(datetime.utcnow())
+		order['meal']=data['meal'].strip()
+		order['username']=data['username'].strip()
+		order['location']=data['location'].strip()
 		self.orders.append(order)
 		return order
 		
 	def get_all_orders(self):
-		return self.orders
+		if len(self.orders)>1:
+			return self.orders
+		else:
+			return {'message':'No orders placed',
+			"Expected Order Format":{
+			"meal":"string",
+			"username":"string",
+			"location":"string",
+			"quantity":"integer"
+			}
+			}
+			
+			
 
 	def get_one_order(self,orderId):
 		for order in self.orders:

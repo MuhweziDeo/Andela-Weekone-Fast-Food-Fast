@@ -36,6 +36,8 @@ https://fast-foods-api.herokuapp.com/
 
 ## Installation 
 - cd in directory with cloned respository
+- install a virtualenv 
+- Activate the virtualenv
 - Run `pip3 install -r requirements.txt` to install recommended packages for python3 in terminal
 - If you are using python 2 `run pip install -r requirements.txt` in terminal
 - open terminal
@@ -57,10 +59,9 @@ https://fast-foods-api.herokuapp.com/
 - Data should be in format below
 	-`{
   "meal": "string",
-  "ordered by": "string",
+  "username": "string",
   "location": "string",
-  "quantity": 0,
-  "Date": "2018-09-15T15:12:56.859Z"
+  "quantity": 0
 }`
 	-order status by default is "pending"
 2. Get all orders
