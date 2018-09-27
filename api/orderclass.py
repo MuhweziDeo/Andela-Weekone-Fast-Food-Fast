@@ -17,7 +17,7 @@ class Order(object):
 		return order
 		
 	def get_all_orders(self):
-		if len(self.orders)>1:
+		if len(self.orders)>=1:
 			return self.orders
 		else:
 			return {'message':'No orders placed',
