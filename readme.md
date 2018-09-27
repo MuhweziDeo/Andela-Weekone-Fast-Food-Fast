@@ -36,15 +36,13 @@ https://fast-foods-api.herokuapp.com/
 
 ## Installation 
 - cd in directory with cloned respository
-- install a virtualenv 
-- Activate the virtualenv
-- Run `pip3 install -r requirements.txt` to install recommended packages for python3 in terminal
-- If you are using python 2 `run pip install -r requirements.txt` in terminal
+- install a virtualenv `virtualenv venv(name of virtualenviroment)`
+- Activate the virtualenv `source bin/activate`
+- Run  `pip install -r requirements.txt` in terminal
 - open terminal
 - run "git checkout 160364084-api-endpoints"
-- run `python/python3(depending on python version) run.py` to start server
+- run `python run.py` to start server
 - In browser navigate to https://localhost:5000 to access app
-
 ## App Features
 | EndPoint  | Function |
 | ------------- | ------------- |
