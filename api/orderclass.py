@@ -39,5 +39,7 @@ class Order(object):
 
 	def update_order(self,orderId,data):
 		order=self.get_one_order(orderId)
-		order.update(data)
+		order_status=data
+		order_status['status']=data['status'].strip()
+		order.update(order_status)
 		return order
