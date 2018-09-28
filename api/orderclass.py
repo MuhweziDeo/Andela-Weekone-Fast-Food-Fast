@@ -2,7 +2,7 @@ from datetime import datetime
 class Order(object):
 	# init class
 	def __init__(self):
-		self.idcounter=2
+		self.idcounter=0
 		self.orders=[]
 
 	def create_order(self,data):
