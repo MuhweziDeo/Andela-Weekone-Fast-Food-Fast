@@ -14,7 +14,9 @@ class Order(object):
 		order['username']=data['username'].strip()
 		order['location']=data['location'].strip()
 		self.orders.append(order)
-		return order,201
+		return {
+		'order-details':order
+		}
 		
 	def get_all_orders(self):
 		if len(self.orders)>=1:
