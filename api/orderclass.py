@@ -27,7 +27,7 @@ class Order(object):
 			"location":"string",
 			"quantity":"integer"
 			}
-			},204
+			}
 			
 			
 
@@ -42,4 +42,4 @@ class Order(object):
 		order_status=data
 		order_status['status']=data['status'].strip()
 		order.update(order_status)
-		return order,200
+		return order
