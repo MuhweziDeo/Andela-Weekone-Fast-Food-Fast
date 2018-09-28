@@ -2,7 +2,7 @@ from datetime import datetime
 class Order(object):
 	# init class
 	def __init__(self):
-		self.idcounter=2
+		self.idcounter=0
 		self.orders=[]
 
 	def create_order(self,data):
@@ -14,11 +14,13 @@ class Order(object):
 		order['username']=data['username'].strip()
 		order['location']=data['location'].strip()
 		self.orders.append(order)
-		return order
+		return {
+		'order-details':order
+		}
 		
 	def get_all_orders(self):
-		if len(self.orders)>1:
-			return self.orders
+		if len(self.orders)>=1:
+			return self.orders,200
 		else:
 			return {'message':'No orders placed',
 			"Expected Order Format":{
@@ -39,5 +41,7 @@ class Order(object):
 
 	def update_order(self,orderId,data):
 		order=self.get_one_order(orderId)
-		order.update(data)
+		order_status=data
+		order_status['status']=data['status'].strip()
+		order.update(order_status)
 		return order
