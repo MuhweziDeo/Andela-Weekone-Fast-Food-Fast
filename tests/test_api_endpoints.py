@@ -73,7 +73,7 @@ class TestAPI(unittest.TestCase):
 		
 	def test_access_url(self):
 		res=self.client.get('fastfoods/api/v1/orders')
-		self.assertEqual(204,res.status_code)
+		self.assertEqual(200,res.status_code)
 
 
 

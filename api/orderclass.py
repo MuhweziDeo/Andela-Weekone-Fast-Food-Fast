@@ -34,7 +34,7 @@ class Order(object):
 	def get_one_order(self,orderId):
 		for order in self.orders:
 			if order['orderId']==orderId:
-				return order,200
+				return order
 		return {"message":"Order with id {} wasnt found four or four".format(orderId)}, 404
 
 	def update_order(self,orderId,data):
