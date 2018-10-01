@@ -28,3 +28,15 @@ venv/
 
 # mypy
 .mypy_cache/
+
+
+.pytest_cache/
+api/.pytest_cache/
+api/__init__.pyc
+api/app.pyc
+api/bin/
+api/include/
+api/lib/
+api/man/
+api/pip-selfcheck.json
+tests/.pytest_cache/
