@@ -1,13 +1,16 @@
 from flask import jsonify
 from flask_restplus import Api, Resource, fields
 from .app import app
-from .orderclass import Order
 
-api = Api(app, prefix="/fastfoods/api/v1", version='1.0', title='Fast-Foods-API', description="An API for ordering Fast Foods"
+api = Api(app, prefix="/api/v2", version='2.0', title='Fast-Foods-API', description="An API for ordering Fast Foods"
 
           )
 
-order = Order()
+user = api.model('User', {
+    'username': fields.String(description="username", required=True, min_length=4),
+     'password': fields.String(description="password", required=True, min_length=4)
+})
+
 
 orderobj = api.model('Order', {
 
@@ -21,35 +24,84 @@ updateorder = api.model('Update Order Status', {
     'status': fields.String(description="Status of order", required=True, min_length=4)
 })
 
+fastfood=api.model('fastfood',{
+    'meal_name': fields.String(description="username", required=True, min_length=4),
+     'price': fields.String(description="password", required=True, min_length=4)
+    })
+
+
+@api.route('/auth/admin')
+class Admin(Resource):
+    @api.expect(user)
+    def post(self):
+      pass
+
+@api.route('/auth/signup')
+class SignUp(Resource):
+    @api.expect(user,code=201)
+    def post(self):
+        """ Register user"""
+        pass
+
+@api.route('/auth/login')
+class Login(Resource):
+    @api.expect(user)
+    def post(self):
+        """Login User"""
+        pass
+
+# fastfoods
+@api.route('/menu')
+class Menu(Resource):
+    @api.expect(fastfood)
+    def post(self):
+        """Add Meal Option"""
+        pass
+
+    def get(self):
+        """Get Menu"""
+        pass
+    
+@api.route('/menu/<int:meal_id>')
+class Meal(Resource):
+    @api.expect(fastfood)
+    def put(self,meal_id):
+        """update fastfood"""
+        pass
+
+    
+    def delete(self,meal_id):
+        """Delete FastFood"""
+        pass
+
+# orders
+@api.route('/users/orders')
+class UserOrders(Resource):
+    def post(self):
+        """ Post An Order"""
+        pass
+
+    def get(self):
+        """Get orders of a specifi user"""
+        pass
 
 @api.route('/orders')
 class Orders(Resource):
-
-    @api.expect(orderobj, validate=True)
-    def post(self):
-        """Create an order """
-        data = api.payload
-        return order.create_order(data)
-
     def get(self):
-        """ Get All Orders """
-        return order.get_all_orders()
-
+        """GET all orders"""
+        pass
 
 @api.route('/orders/<int:orderId>')
-class OneOrder(Resource):
+class Order(Resource):
+    def get(self,orderId):
+        """GET A SPECIFIC ORDER"""
+        pass
 
-    def get(self, orderId):
-        """ Get Details of an Order by orderId"""
-        return order.get_one_order(orderId)
-
-    @api.expect(updateorder, validate=True)
-    def put(self, orderId):
-        """ update order Status of an order"""
-        data = api.payload
-        order.update_order(orderId, data)
-        return {'message': 'Order {} updated'.format(orderId)}
-
+    @api.expect(updateorder)
+    def put(self,orderId):
+        """ Update order status"""
+        pass
+        
 
 @api.errorhandler(AttributeError)
 def error(AttributeError):
